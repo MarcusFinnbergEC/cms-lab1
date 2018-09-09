@@ -1,0 +1,102 @@
+/*
+Theme Name: Ultimate Blog
+Author: Marcus Finnberg
+Description: My awesome blog style
+Version: 0.0.1
+Tags: CSS3
+*/
+::-webkit-scrollbar{
+    display: none;
+}
+p,b,em, ul {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header {
+    width: 100vw;
+    height: 100px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    box-sizing: border-box;
+    min-height: 55%;
+}
+#sidebar {
+    min-height: 75%;
+    width: 13%;
+    background-color: orangered;
+    box-sizing: border-box;
+}
+.navigation, .blogpost-month {
+    list-style-type: none;
+}
+.navigation {
+    background-color: peachpuff;
+}
+.blogpost-month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation > li {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: peachpuff;
+    color: whitesmoke;
+}
+.navigation > li:hover {
+    background-color: #333333;
+}
+#main-container > div {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 87%;
+}
+.blog-post {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    box-shadow: #333333 5px 5px 5px;
+    padding: 10px;
+}
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    min-height: 150px;
+    background-color: #333333;
+}
